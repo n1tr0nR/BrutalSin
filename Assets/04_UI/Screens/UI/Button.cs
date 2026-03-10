@@ -1,4 +1,5 @@
-﻿using Game;
+﻿using _06_Audio;
+using Game;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -27,7 +28,7 @@ namespace UI
         public void OnPointerEnter(PointerEventData eventData)
         {
             hovering = true;
-            AudioSource.PlayClipAtPoint(hoverClip, Vector3.zero);
+            AudioHelper.PlayClipAtPoint(hoverClip, Vector3.zero, 1.0F, 0.1F, MusicManager.Instance.sound);
             enableOnHover.SetActive(true);
             onHoverEnter?.Invoke();
         }
@@ -42,7 +43,7 @@ namespace UI
         public void OnPointerClick(PointerEventData eventData)
         {
             onClick?.Invoke();
-            AudioSource.PlayClipAtPoint(clickClip, Vector3.zero);
+            AudioHelper.PlayClipAtPoint(clickClip, Vector3.zero, 1.0F, 0.1F, MusicManager.Instance.sound);
             hovering = false;
             enableOnHover.SetActive(false);
         }

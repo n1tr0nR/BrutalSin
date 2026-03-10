@@ -1,6 +1,7 @@
 ﻿using System;
 using Core;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace Game
 {
@@ -10,6 +11,12 @@ namespace Game
 
         [SerializeField] private AudioClip musicClip;
         [SerializeField] private AudioSource source;
+        
+        [Header("Public Groups")]
+        public AudioMixerGroup master;
+        public AudioMixerGroup music;
+        public AudioMixerGroup sound;
+        public AudioMixerGroup voice;
 
         public void SetVolume(float volume)
         {
