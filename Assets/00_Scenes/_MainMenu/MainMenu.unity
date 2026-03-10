@@ -11467,7 +11467,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1626286795}
-  - component: {fileID: 1626286794}
   - component: {fileID: 1626286793}
   - component: {fileID: 1626286792}
   m_Layer: 0
@@ -11486,9 +11485,9 @@ AudioSource:
   m_GameObject: {fileID: 1626286791}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -654323610461912403, guid: 2d975af3388d9e24e9bf6d05d44659cb, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 60a5c6fe51f15ef449e6c3d0592896ba, type: 3}
+  m_Resource: {fileID: 8300000, guid: aa13df8aa849abb4da2592a75d9232b4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11586,20 +11585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82f674cfd847479f9c1d033852ae9675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.MusicManager
-  musicClip: {fileID: 0}
+  musicClip: {fileID: 8300000, guid: aa13df8aa849abb4da2592a75d9232b4, type: 3}
   source: {fileID: 1626286792}
---- !u!114 &1626286794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1626286791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef32a29d1cb94ca98bfafb6b45ce7b84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Game.SettingsManager
 --- !u!4 &1626286795
 Transform:
   m_ObjectHideFlags: 0
