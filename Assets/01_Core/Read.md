@@ -1,0 +1,16 @@
+##Core/
+├── Bootstrap/
+	- Game startup logic
+	- Initializes managers and systems
+├── Managers/
+	- Global controllers (GameManager, AudioManager, UIManager)
+├── Config/
+	- Game-wide configuration and settings
+├── SaveLoad/
+	- Save & load logic
+	- Player progress and persistence
+└── Utilities/
+	- Helper methods and extensions
+	- Shared utility code
+	
+**Rule:** Depends on nothing
