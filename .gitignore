@@ -116,5 +116,6 @@ InitTestScene*.unity*
 *.slnx
 *.htm
 *.vsconfig
-/[Aa]ssets/10_Dev/
+/[Aa]ssets/10_Dev/*
+!Assets/10_Dev/.keep
 
